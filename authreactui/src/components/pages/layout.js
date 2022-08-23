@@ -1,8 +1,11 @@
+import { CssBaseline } from "@mui/material";
+import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar" 
 const Layout = () => {
     return <> 
+    <CssBaseline/>
     <Navbar/> 
-    <h1>Home Page</h1>
+    <Outlet />
     </>
 };
 
